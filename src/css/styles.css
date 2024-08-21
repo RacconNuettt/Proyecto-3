@@ -137,7 +137,8 @@
     font-size: 16px;
     padding: 10px;
     background-color: transparent;
-    -webkit-text-fill-color: rgb(0, 0, 0);
+    -webkit-text-fill-color: 
+    rgba(0, 0, 0, 0.534);
     cursor: pointer;
     transition: border-color 0.3s ease;
     border: none;
