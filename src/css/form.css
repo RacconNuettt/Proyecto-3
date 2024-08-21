@@ -29,7 +29,7 @@ body {
     position: relative;
 }
 .borde{
-    border: 1px solid #0000003a;
+    border: 1px solid #4400ff8c;
     border-radius: 20px;
     padding: 30px;
 }
@@ -73,6 +73,12 @@ body {
     padding: 10px;
     text-align: justify;
 }
+.check{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 .btn{
     display: flex;
     justify-content: center;
@@ -91,4 +97,9 @@ body {
 }
 .submit-btn:hover {
     background-color: #0056b3;
+}
+.check label{
+    margin-left: 10px;
+    margin-bottom: 0px;
+    font-size: 16px;
 }
