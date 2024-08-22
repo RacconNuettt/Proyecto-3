@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "server": "json-server --watch server/db.json --port 3001",
-    "start": "npx parcel src/index.html"
+    "start": "npx parcel src/index.html --open"
   },
   "keywords": [],
   "author": "",
