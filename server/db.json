@@ -1,3 +1,89 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "9ee6",
+      "nombre": {},
+      "codigo": {}
+    },
+    {
+      "id": "d752",
+      "nombre": {},
+      "codigo": {}
+    },
+    {
+      "id": "e9a3",
+      "nombre": "freddy",
+      "codigo": "8D8C"
+    },
+    {
+      "id": "f064",
+      "nombre": "freddydd",
+      "codigo": "8D8C"
+    },
+    {
+      "id": "b72d",
+      "nombre": "fred",
+      "codigo": "8D8C"
+    }
+  ],
+  "compus": [
+    {},
+    {
+      "id": "b282",
+      "nombre": "freddy",
+      "codigo": "sede1"
+    },
+    {
+      "id": "c33d",
+      "nombre": "freddy",
+      "sede": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {}
+      },
+      "fechaSalida": {},
+      "fechaRegreso": {},
+      "codigo": "sede1"
+    },
+    {
+      "id": "cc40",
+      "nombre": "freddy",
+      "sede": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {}
+      },
+      "fechaSalida": {},
+      "fechaRegreso": {},
+      "codigo": "Sede El Huerto"
+    },
+    {
+      "id": "4b4b",
+      "nombre": "freddy",
+      "sede": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {}
+      },
+      "fechaSalida": {},
+      "fechaRegreso": {},
+      "codigo": "Sede El Huerto"
+    },
+    {
+      "id": "2c0b",
+      "nombre": "freddy",
+      "sede": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {}
+      },
+      "fechaSalida": {},
+      "fechaRegreso": {},
+      "codigo": "Sede El Huerto"
+    }
+  ]
 }
