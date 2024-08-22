@@ -1,5 +1,5 @@
 
-async function postUsers(nombre,codigo) {
+async function postUsers(nombre,sede,fechaSalida,fechaRegreso,codigo) {
     try {
      
         const userData = { 
@@ -7,7 +7,7 @@ async function postUsers(nombre,codigo) {
             sede,
             fechaSalida,
             fechaRegreso,
-            codigo 
+            codigo
         };
         const response = await fetch("http://localhost:3001/compus", {
             method: 'POST',

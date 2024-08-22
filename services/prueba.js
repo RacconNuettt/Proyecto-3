@@ -17,6 +17,12 @@ enviar.addEventListener("click", async function () {
     const fechaRegresoValue = fechaRegreso.value
     const codigoValue = codigo.value
 
+    if (!nombre || !sede || !fechaSalida || !fechaRegreso || !codigo) {
+        return alert('complete todos los campos');
+    }
+
     postUsers(nombreValue,sedeValue,fechaSalidaValue,fechaRegresoValue,codigoValue)
-});
+
+    
+})
 console.log(getUsers())
