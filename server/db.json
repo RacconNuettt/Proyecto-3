@@ -1,50 +1,47 @@
 {
   "users": [
     {
-      "id": "e9a3",
-      "nombre": "freddy",
-      "codigo": "8D8C"
+      "id": "aafe"
     },
     {
-      "id": "f064",
-      "nombre": "freddydd",
-      "codigo": "8D8C"
+      "id": "f617"
     },
     {
-      "id": "b72d",
-      "nombre": "fred",
-      "codigo": "8D8C"
+      "id": "ce99",
+      "firstName": "freddy",
+      "lastName": "torres",
+      "email": "fred@fwd.com",
+      "password": "rrrr",
+      "role": "Estudiante"
+    },
+    {
+      "id": "ae2f"
+    },
+    {
+      "id": "146e"
+    },
+    {
+      "id": "6436"
+    },
+    {
+      "id": "5450"
+    },
+    {
+      "id": "396a"
+    },
+    {
+      "id": "d0b3"
+    },
+    {
+      "id": "bd77"
+    },
+    {
+      "id": "a154"
     }
   ],
   "compus": [
     {
-      "id": "eb99",
-      "nombre": "freddy",
-      "sede": {
-        "0": {},
-        "1": {},
-        "2": {},
-        "3": {}
-      },
-      "fechaSalida": {},
-      "fechaRegreso": {},
-      "codigo": "Sede El Huerto"
-    },
-    {
-      "id": "0ecc",
-      "nombre": "freddy",
-      "sede": "Sede El Huerto",
-      "fechaSalida": "2024-08-22",
-      "fechaRegreso": "2024-08-23",
-      "codigo": "8D8C"
-    },
-    {
-      "id": "2202",
-      "nombre": "freddyt",
-      "sede": "Sede Edunamica Nosara",
-      "fechaSalida": "2024-08-22",
-      "fechaRegreso": "2024-08-24",
-      "codigo": "8D8C"
+      "id": "45f6"
     }
   ]
 }
