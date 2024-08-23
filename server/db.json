@@ -1,47 +1,46 @@
 {
   "users": [
     {
-      "id": "aafe"
-    },
-    {
-      "id": "f617"
-    },
-    {
-      "id": "ce99",
+      "id": "1b2c",
       "firstName": "freddy",
       "lastName": "torres",
       "email": "fred@fwd.com",
-      "password": "rrrr",
+      "password": "1234",
+      "role": "Estudiante"
+    },
+    {
+      "id": "d91d",
+      "firstName": "jose",
+      "lastName": "gonzwlez",
+      "email": "f@gmail.com",
+      "password": "1234",
+      "role": "Administrador"
+    },
+    {
+      "id": "3bc5",
+      "firstName": "daniel",
+      "lastName": "monge",
+      "email": "lao@fwd.com",
+      "password": "1234",
       "role": "Estudiante"
     }
   ],
   "compus": [
     {
-      "id": "45f6"
-    },
-    {
-      "id": "631e",
-      "nombre": "freddy",
-      "sede": "Sede Hub Santa Ana",
-      "fechaSalida": "2024-08-22",
-      "fechaRegreso": "2024-08-24",
-      "codigo": "8D8C"
-    },
-    {
-      "id": "773b",
-      "nombre": "jose loca",
-      "sede": "Sede Edunamica Nosara",
-      "fechaSalida": "2024-08-22",
-      "fechaRegreso": "2024-08-30",
-      "codigo": "8G8E"
-    },
-    {
-      "id": "b3c5",
-      "nombre": "fred",
-      "sede": "Sede Hub Santa Ana",
+      "id": "2443",
+      "nombre": "Jose ",
+      "sede": "Sede El Huerto",
       "fechaSalida": "2024-08-23",
       "fechaRegreso": "2024-08-30",
-      "codigo": "8D8C"
+      "codigo": "ksdjfla8"
+    },
+    {
+      "id": "0ba1",
+      "nombre": "freddy",
+      "sede": "Sede El Huerto",
+      "fechaSalida": "2024-08-23",
+      "fechaRegreso": "2024-08-29",
+      "codigo": "R2D2"
     }
   ]
 }
