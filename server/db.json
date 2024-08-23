@@ -13,35 +13,35 @@
       "email": "fred@fwd.com",
       "password": "rrrr",
       "role": "Estudiante"
-    },
-    {
-      "id": "ae2f"
-    },
-    {
-      "id": "146e"
-    },
-    {
-      "id": "6436"
-    },
-    {
-      "id": "5450"
-    },
-    {
-      "id": "396a"
-    },
-    {
-      "id": "d0b3"
-    },
-    {
-      "id": "bd77"
-    },
-    {
-      "id": "a154"
     }
   ],
   "compus": [
     {
       "id": "45f6"
+    },
+    {
+      "id": "631e",
+      "nombre": "freddy",
+      "sede": "Sede Hub Santa Ana",
+      "fechaSalida": "2024-08-22",
+      "fechaRegreso": "2024-08-24",
+      "codigo": "8D8C"
+    },
+    {
+      "id": "773b",
+      "nombre": "jose loca",
+      "sede": "Sede Edunamica Nosara",
+      "fechaSalida": "2024-08-22",
+      "fechaRegreso": "2024-08-30",
+      "codigo": "8G8E"
+    },
+    {
+      "id": "b3c5",
+      "nombre": "fred",
+      "sede": "Sede Hub Santa Ana",
+      "fechaSalida": "2024-08-23",
+      "fechaRegreso": "2024-08-30",
+      "codigo": "8D8C"
     }
   ]
 }
