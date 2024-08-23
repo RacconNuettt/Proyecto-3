@@ -19,4 +19,4 @@ async function getUsers() {
     }
 }
 
-export {getUsers};
+export { getUsers }

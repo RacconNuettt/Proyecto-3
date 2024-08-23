@@ -1,4 +1,4 @@
-import {getUsers} from "../services/getF.js";
+
 import {postUsers} from "../services/postF.js"
 
 const nombre=document.getElementById("nombre")
