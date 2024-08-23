@@ -13,7 +13,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Solicitudes</a></li>
+                <li><a href="#" class="cart-icon">Solicitudes</a></li>
                 <li><a href="#">Historial</a></li>
             </ul>
         </nav>
@@ -33,6 +33,20 @@
             y asegurar que no se pasen del tiempo dictado para la devolucion de la computadora
         </p>
     </div>
+
+    <div id="cart-popup" class="cart-popup">
+        <div class="cart-popup-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items">
+            </ul>
+            <div id="cart-total">
+                <strong>Total:</strong> $<span id="cart-total-price">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="/src\js\admin.js"></script>
 </body>
 
 </html>
