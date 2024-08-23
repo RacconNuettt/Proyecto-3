@@ -13,6 +13,53 @@
       "email": "fred@fwd.com",
       "password": "rrrr",
       "role": "Estudiante"
+    },
+    {
+      "id": "029f"
+    },
+    {
+      "id": "78fd"
+    },
+    {
+      "id": "8301"
+    },
+    {
+      "id": "b8b0"
+    },
+    {
+      "id": "4454"
+    },
+    {
+      "id": "c74e"
+    },
+    {
+      "id": "9035"
+    },
+    {
+      "id": "0144"
+    },
+    {
+      "id": "6179",
+      "firstName": "Jose",
+      "lastName": "pene",
+      "email": "pene@gmail.com",
+      "password": "pene",
+      "role": "Administrador"
+    },
+    {
+      "id": "c52e"
+    },
+    {
+      "id": "e259"
+    },
+    {
+      "id": "799a"
+    },
+    {
+      "id": "b2d2"
+    },
+    {
+      "id": "cc7b"
     }
   ],
   "compus": [
@@ -42,6 +89,14 @@
       "fechaSalida": "2024-08-23",
       "fechaRegreso": "2024-08-30",
       "codigo": "8D8C"
+    },
+    {
+      "id": "5461",
+      "nombre": "pene",
+      "sede": "Sede El Huerto",
+      "fechaSalida": "2024-08-22",
+      "fechaRegreso": "2024-08-24",
+      "codigo": "p3n3"
     }
   ]
 }
