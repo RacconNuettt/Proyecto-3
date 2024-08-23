@@ -3,16 +3,16 @@ import { getUsers } from "../services/getLog.js";
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const loginForm = document.getElementById("loginForm");
+const enviar = document.getElementById("enviar")
 
-loginForm.addEventListener("submit", async function (event) {
-    event.preventDefault();
-    
+enviar.addEventListener("click", async function () {
+
     const userEmail = email.value
     const userPassword = password.value
 
     if (!userEmail || !userPassword) {
-        alert("Por favor, ingresa tu email y contraseña.");
-        return;
+       alert("Por favor, ingresa tu email y contraseña.");   
+       return 
     }
 
     try {
@@ -34,3 +34,5 @@ loginForm.addEventListener("submit", async function (event) {
         alert("Ocurrió un error al intentar iniciar sesión.");
     }
 })
+console.log(getUsers());
+

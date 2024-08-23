@@ -1,22 +1,39 @@
-import { getUsers } from "../services/get";
 import { postUsers } from "../services/post";
 
-const firstName = document.getElementById("Firstname")
-const lastName = document.getElementById("Lastname")
-const email = document.getElementById("email")
-const password = document.getElementById("password")
-const role = document.getElementById("select")
-const enviar= document.getElementById("enviar")
+// Esperar a que el DOM esté completamente cargado
+document.addEventListener("DOMContentLoaded", () => {
+    const firstName = document.getElementById("Firstname");
+    const lastName = document.getElementById("Lastname");
+    const email = document.getElementById("email");
+    const password = document.getElementById("password");
+    const role = document.getElementById("select");
+    const enviar = document.getElementById("enviar");
 
-enviar.addEventListener("click", async function () {
-    
-    const firstNameValue = firstName.value
-    const lastNameValue = lastName.value
-    const emailValue = email.value
-    const passwordValue = password.value
-    const roleValue = role.value
+    enviar.addEventListener("click", async function () {
+        const firstNameValue = firstName.value;
+        const lastNameValue = lastName.value;
+        const emailValue = email.value;
+        const passwordValue = password.value;
+        const roleValue = role.value;
 
-    postUsers(firstNameValue,lastNameValue,emailValue,passwordValue,roleValue)
+        if (!firstNameValue || !lastNameValue || !emailValue || !passwordValue || !roleValue) {
+            alert('Por favor, complete todos los campos.');
+            return;
+        }
 
-})
-console.log(postUsers())
+        try {
+            const data = await postUsers(firstNameValue, lastNameValue, emailValue, passwordValue, roleValue);
+
+            
+            if (data.id) {
+                alert('Usuario registrado con éxito');
+                window.location.href = '/src/pages/login.html'
+            } else {
+                alert('Hubo un problema al registrar el usuario. Por favor, inténtelo de nuevo.');
+            }
+        } catch (error) {
+            console.error('Error al registrar usuario:', error);
+            alert('Hubo un problema al registrar el usuario. Por favor, inténtelo de nuevo.');
+        }
+    });
+});
