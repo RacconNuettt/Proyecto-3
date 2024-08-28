@@ -1,8 +1,22 @@
 {
   "users": [
-    
+    {
+      "id": "7f88",
+      "firstName": "freddy",
+      "lastName": "torres",
+      "email": "fred@fwd.com",
+      "password": "1234",
+      "role": "Estudiante"
+    },
+    {
+      "id": "1cdc",
+      "firstName": "jose",
+      "lastName": "gonzwlez",
+      "email": "a@gmail.com",
+      "password": "1234",
+      "role": "Administrador"
+    }
   ],
-  "compus": []
-  ],
+  "compus": [],
   "solicitud": []
 }
