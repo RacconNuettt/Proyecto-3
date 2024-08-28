@@ -1,47 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solicitudes</title>
     <link rel="stylesheet" href="../css/solicitud.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Solicitudes</h1>
-        <div id="solicitudesCtn"></div>
+        <table id="solicitudesTable" class="solicitudes-table">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Sede</th>
+                    <th>Fecha de Salida</th>
+                    <th>Fecha de Regreso</th>
+                    <th>Código</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="solicitudesCtn"></tbody>
+        </table>
     </div>
 
     <div id="editModal" class="modal">
         <div class="modal-content">
             <span id="closeModal" class="close">&times;</span>
-            <h2>Editar Solicitud</h2>
+            <h2>Ver Solicitud</h2>
             <label>
-                <input id="editNombre" required placeholder="Nombre de usuario" type="text" class="input">
+                <input id="editNombre" required placeholder="Nombre de usuario" type="text" class="input" readonly>
                 <span>Nombre de Usuario</span>
             </label>
             <label>
-                <input id="editSede" required placeholder="Sede" type="text" class="input">
+                <input id="editSede" required placeholder="Sede" type="text" class="input" readonly>
                 <span>Sede</span>
             </label>
             <label>
-                <input id="editFechaSalida" required placeholder="Fecha de Salida" type="date" class="input">
+                <input id="editFechaSalida" required placeholder="Fecha de Salida" type="date" class="input" readonly>
                 <span>Fecha de Salida</span>
             </label>
             <label>
-                <input id="editFechaRegreso" required placeholder="Fecha de Regreso" type="date" class="input">
+                <input id="editFechaRegreso" required placeholder="Fecha de Regreso" type="date" class="input" readonly>
                 <span>Fecha de Regreso</span>
             </label>
             <label>
-                <input id="editCodigo" required placeholder="Código de la Computadora" type="text" class="input">
+                <input id="editCodigo" required placeholder="Código de la Computadora" type="text" class="input" readonly>
                 <span>Código de la Computadora</span>
             </label>
             <div class="btnC">
-                <button id="saveChanges" class="submit">Guardar Cambios</button>
+                <button id="acceptRequest" class="submit">Aceptar Solicitud</button>
+                <button id="rejectRequest" class="submit reject">Rechazar Solicitud</button>
             </div>
         </div>
     </div>
 
     <script type="module" src="../../src/js/admin.js"></script>
 </body>
+
 </html>

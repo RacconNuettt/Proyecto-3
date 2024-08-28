@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src\css\admin.css">
+    <title>Administrador - Solicitudes</title>
+    <link rel="stylesheet" href="/src/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -13,40 +16,43 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#" class="cart-icon">Solicitudes</a></li>
+                <li><a href="../pages/solicitudes.html" class="cart-icon">Solicitudes</a></li>
                 <li><a href="#">Historial</a></li>
             </ul>
         </nav>
-        <a class="btn" href="#"><button>Log Out</button></a>
-    </header>
-    <br>
-    <div class="wrapper-banner">
-        <div class="banner">
-            <img id="hdp" src="/src\img\depositphotos_192282150-stock-illustration-teachers-group-at-giant-books.webp" alt="Imagen banner principal">
-        </div>
-    </div>
-
-    <div class="ctnP">
-        <p id="informationP">
-            Bienvenido a la pagina de administrador! Desde aqui podras acceder a los registros de los estudiantes que
-            han realizado solicitudes para llevarse la computadora a casa. Tendras acceso al historial de los estudiantes
-            y asegurar que no se pasen del tiempo dictado para la devolucion de la computadora
-        </p>
-    </div>
-
-    <div id="cart-popup" class="cart-popup">
-        <div class="cart-popup-content">
-            <span class="close">&times;</span>
-            <h2>Carrito de Compras</h2>
-            <ul id="cart-items">
-            </ul>
-            <div id="cart-total">
-                <strong>Total:</strong> $<span id="cart-total-price">0</span>
+        <a id="btn" href="#"><button id="btn1"><span>Log Out</span></button></a>
+        <div class="btn">
+            <div class="btn__indicator">
+                <div class="btn__icon-container">
+                    <i class="btn__icon fa-solid"></i>
+                </div>
             </div>
         </div>
+    </header>
+    <div>
+        <section class="main-content">
+            <div class="banner">
+                <img id="hdp"
+                    src="/src/img/depositphotos_192282150-stock-illustration-teachers-group-at-giant-books.webp"
+                    alt="Imagen banner principal">
+            </div>
+
+            <div class="info-container">
+                <p id="informationP">
+                    Bienvenido a la página de administrador. Desde aquí podrás acceder a los registros de los
+                    estudiantes que han realizado solicitudes para llevarse la computadora a casa. Tendrás acceso al
+                    historial de los estudiantes y asegurar que no se pasen del tiempo dictado para la devolución de la
+                    computadora.
+                </p>
+            </div>
+        </section>
     </div>
 
-    <script src="/src\js\admin.js"></script>
+
+    <script src="../js/animacion.js"></script>
+
+
+
 </body>
 
 </html>

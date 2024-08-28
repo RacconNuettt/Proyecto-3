@@ -1,91 +1,47 @@
 {
   "users": [
     {
-      "id": "1b2c",
-      "firstName": "freddy",
-      "lastName": "torres",
-      "email": "fred@fwd.com",
+      "id": "ff58",
+      "firstName": "Jose Daniel",
+      "lastName": "Gonzalez",
+      "email": "j@gmail.com",
       "password": "1234",
       "role": "Estudiante"
     },
     {
-      "id": "d91d",
-      "firstName": "jose",
-      "lastName": "gonzwlez",
-      "email": "f@gmail.com",
+      "id": "d7cd",
+      "firstName": "Jose Daniel",
+      "lastName": "Gonzalez",
+      "email": "j@gmail.com",
       "password": "1234",
       "role": "Administrador"
     },
     {
-      "id": "3bc5",
-      "firstName": "daniel",
-      "lastName": "monge",
-      "email": "lao@fwd.com",
+      "id": "d399",
+      "firstName": "Jose Daniel",
+      "lastName": "Gonzalez",
+      "email": "j@gmail.com",
       "password": "1234",
       "role": "Estudiante"
     },
     {
-      "id": "029f"
-    },
-    {
-      "id": "78fd"
-    },
-    {
-      "id": "8301"
-    },
-    {
-      "id": "b8b0"
-    },
-    {
-      "id": "4454"
-    },
-    {
-      "id": "c74e"
-    },
-    {
-      "id": "9035"
-    },
-    {
-      "id": "0144"
-    },
-    {
-      "id": "6179",
-      "firstName": "Jose",
-      "lastName": "pene",
-      "email": "pene@gmail.com",
-      "password": "pene",
+      "id": "041e",
+      "firstName": "Jose Daniel",
+      "lastName": "Gonzalez",
+      "email": "j@gmail.com",
+      "password": "1234",
       "role": "Administrador"
-    },
-    {
-      "id": "c52e"
-    },
-    {
-      "id": "e259"
-    },
-    {
-      "id": "799a"
-    },
-    {
-      "id": "b2d2"
-    },
-    {
-      "id": "cc7b"
     }
   ],
   "compus": [
     {
-      "id": "2443",
-      "nombre": "Jose ",
+      "id": "7586",
+      "nombre": "Jose Daniel",
       "sede": "Sede El Huerto",
-      "fechaSalida": "2024-08-23",
-      "fechaRegreso": "2024-08-30",
-      "codigo": "ksdjfla8"
-    },
-    {
-      "id": "0ba1",
-      "nombre": "freddy",
-      "sede": "Sede El Huerto",
-      "fechaSalida": "2024-08-23",
+      "fechaSalida": "2024-08-28",
+      "fechaRegreso": "2024-08-31",
+      "codigo": "JK34"
     }
-  ]
+  ],
+  "solicitud": []
 }

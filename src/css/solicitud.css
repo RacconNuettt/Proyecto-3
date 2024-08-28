@@ -21,44 +21,36 @@ h1 {
     color: #333;
 }
 
-table {
+.solicitudes-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
-th, td {
+.solicitudes-table th, .solicitudes-table td {
     border: 1px solid #ddd;
-    padding: 12px;
+    padding: 10px;
     text-align: left;
-    font-size: 16px;
 }
 
-th {
-    background-color: #f7f7f7;
-    color: #555;
-    font-weight: bold;
+.solicitudes-table th {
+    background-color: #f2f2f2;
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:hover {
-    background-color: #f1f1f1;
-}
-
-button {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
+.solicitudes-table td {
+    position: relative;
 }
 
 .edit-btn {
     background-color: #007BFF;
     color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .edit-btn:hover {
@@ -106,14 +98,10 @@ h2 {
     color: #333;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
 label {
     margin-bottom: 5px;
     color: #555;
+    font-size: 14px;
 }
 
 input[type="text"],
@@ -125,7 +113,13 @@ input[type="date"] {
     font-size: 16px;
 }
 
-.submit-btn {
+.btnC {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.submit {
     padding: 10px 20px;
     background-color: #28a745;
     color: white;
@@ -133,8 +127,28 @@ input[type="date"] {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
 }
 
-.submit-btn:hover {
+.submit:hover {
     background-color: #218838;
+}
+
+.reject {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+.reject:hover {
+    background-color: #e04e4e;
+    border-color: #e04e4e;
+}
+
+.status {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #00f208;
 }
