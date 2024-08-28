@@ -1,53 +1,52 @@
-/* import { postUsers } from "../../services/postF"; */
-import { getRequest } from "../../services/get";
+import { getRequest } from "../../services/get.js"; // Para obtener las solicitudes existentes
+import { postSolicitud } from "../../services/postR.js"; // Para enviar el estado a la API solicitud
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const solicitudesCtn = document.getElementById("solicitudesCtn");
-
     try {
-
         const solicitudes = await getRequest();
+        console.log(solicitudes); // Para verificar las solicitudes obtenidas
 
         solicitudes.forEach((solicitud, index) => {
-            const solicitudElement = document.createElement("div");
-            solicitudElement.classList.add("solicitud-item");
-            solicitudElement.innerHTML = `
-                <p>Nombre de Usuario: ${solicitud.nombre}</p>
-                <p>Sede: ${solicitud.sede}</p>
-                <p>Fecha de Salida: ${solicitud.fechaSalida}</p>
-                <p>Fecha de Regreso: ${solicitud.fechaRegreso}</p>
-                <p>Código de la Computadora: ${solicitud.codigo}</p>
-                <button class="edit-btn" data-index="${index}">Editar</button>
-                <button class="delete-btn" data-index="${index}">Eliminar</button>
+            const solicitudRow = document.createElement("tr");
+            solicitudRow.id = `solicitud-${index}`;
+            solicitudRow.innerHTML = `
+                <td>${solicitud.nombre}</td>
+                <td>${solicitud.sede}</td>
+                <td>${solicitud.fechaSalida}</td>
+                <td>${solicitud.fechaRegreso}</td>
+                <td>${solicitud.codigo}</td>
+                <td>
+                    <button class="edit-btn" data-index="${index}">Ver</button>
+                    <span id="status-${index}" class="status">
+                        ${solicitud.status === 'accepted' ? '✔️' : solicitud.status === 'rejected' ? '❌' : ''}
+                    </span>
+                </td>
             `;
-            solicitudesCtn.appendChild(solicitudElement);
+            solicitudesCtn.appendChild(solicitudRow);
         });
 
         document.querySelectorAll(".edit-btn").forEach(button => {
-            button.addEventListener("click", handleEdit);
-        });
-
-        document.querySelectorAll(".delete-btn").forEach(button => {
-            button.addEventListener("click", handleDelete);
+            button.addEventListener("click", (event) => handleEdit(event, solicitudes));
         });
 
     } catch (error) {
-        console.error('Error loading requests:', error);
+        console.error('Error cargando solicitudes:', error);
     }
 });
 
-function handleEdit(event) {
+function handleEdit(event, solicitudes) {
     const index = event.target.dataset.index;
     const solicitud = solicitudes[index];
-    openEditModal(solicitud);
+    
+    if (solicitud.status === 'accepted' || solicitud.status === 'rejected') {
+        alert('Esta solicitud ya ha sido procesada y no puede ser modificada.');
+        return;
+    }
+
+    openEditModal(solicitud, index);
 }
 
-function handleDelete(event) {
-    const index = event.target.dataset.index;
-    deleteSolicitud(index);
-}
-
-function openEditModal(solicitud) {
+function openEditModal(solicitud, index) {
     const modal = document.getElementById("editModal");
     modal.style.display = "block";
 
@@ -56,6 +55,9 @@ function openEditModal(solicitud) {
     document.getElementById("editFechaSalida").value = solicitud.fechaSalida;
     document.getElementById("editFechaRegreso").value = solicitud.fechaRegreso;
     document.getElementById("editCodigo").value = solicitud.codigo;
+
+    document.getElementById("acceptRequest").onclick = () => handleAccept(index, solicitudes);
+    document.getElementById("rejectRequest").onclick = () => handleReject(index, solicitudes);
 }
 
 function closeModal() {
@@ -63,5 +65,31 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-document.getElementById("closeModal").addEventListener("click", closeModal);
+async function handleAccept(index, solicitudes) {
+    solicitudes[index].status = 'accepted';
+    await postSolicitud({
+        id: solicitudes[index].id,
+        status: 'accepted'
+    });
+    updateSolicitudStatus(index, 'accepted');
+    closeModal();
+}
 
+async function handleReject(index, solicitudes) {
+    solicitudes[index].status = 'rejected';
+    await postSolicitud({
+        id: solicitudes[index].id,
+        status: 'rejected'
+    });
+    updateSolicitudStatus(index, 'rejected');
+    closeModal();
+}
+
+function updateSolicitudStatus(index, status) {
+    const statusSpan = document.getElementById(`status-${index}`);
+    if (statusSpan) {
+        statusSpan.innerHTML = status === 'accepted' ? '✔️' : status === 'rejected' ? '❌' : '';
+    }
+}
+
+document.getElementById("closeModal").addEventListener("click", closeModal);

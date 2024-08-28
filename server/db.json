@@ -1,29 +1,8 @@
 {
   "users": [
-    {
-      "id": "159b",
-      "firstName": "freddy",
-      "lastName": "torres",
-      "email": "fred@fwd.com",
-      "password": "1234",
-      "role": "Estudiante"
-    },
-    {
-      "id": "b47f",
-      "firstName": "Antonio",
-      "lastName": "torres",
-      "email": "pene@fwd.com",
-      "password": "1234",
-      "role": "Administrador"
-    },
-    {
-      "id": "5a89",
-      "firstName": "jose",
-      "lastName": "gonzwlez",
-      "email": "f@gmail.com",
-      "password": "1234",
-      "role": "Estudiante"
-    }
+    
   ],
   "compus": []
+  ],
+  "solicitud": []
 }
