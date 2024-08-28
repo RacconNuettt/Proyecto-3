@@ -1,7 +1,7 @@
 
 async function postUsers(nombre,sede,fechaSalida,fechaRegreso,codigo) {
     try {
-     
+    
         const userData = { 
             nombre,
             sede,
@@ -18,7 +18,7 @@ async function postUsers(nombre,sede,fechaSalida,fechaRegreso,codigo) {
         });
 
         return await response.json();
-  
+
     } catch (error) {
         console.error('Error posting user:', error);
         throw error;

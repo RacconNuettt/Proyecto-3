@@ -2,17 +2,19 @@ import { getUsers } from "../services/getLog.js";
 
 const email = document.getElementById("email");
 const password = document.getElementById("password");
+const role = document.getElementById("select")
 const loginForm = document.getElementById("loginForm");
 const enviar = document.getElementById("enviar")
 
 enviar.addEventListener("click", async function () {
-
+    debugger
     const userEmail = email.value
     const userPassword = password.value
+    const userRole = role.value
 
     if (!userEmail || !userPassword) {
-       alert("Por favor, ingresa tu email y contraseña.");   
-       return 
+        alert("Por favor, ingresa tu email y contraseña.");   
+        return;
     }
 
     try {
@@ -20,11 +22,16 @@ enviar.addEventListener("click", async function () {
         const users = await getUsers();
 
         
-        const user = users.find(user => user.email === userEmail && user.password === userPassword);
+        const user = users.find(user => user.email === userEmail && user.password === userPassword && user.role === userRole);
 
         if (user) {
             alert("Login exitoso!");
-            window.location.href = "src\pages\administrador.html"
+
+            if(user.role === "Administrador"){
+            window.location.href = "http://localhost:1234/administrador.html"
+            }else{
+                window.location.href = "http://localhost:1234/pages/formulario.html"
+            }
 
         } else {
             alert("Email o contraseña incorrectos.");
@@ -34,5 +41,5 @@ enviar.addEventListener("click", async function () {
         alert("Ocurrió un error al intentar iniciar sesión.");
     }
 })
-console.log(getUsers());
 
+console.log(getUsers());

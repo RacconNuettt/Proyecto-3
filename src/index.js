@@ -27,9 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
             
             if (data.id) {
                 alert('Usuario registrado con éxito');
-                window.location.href = '/src/pages/login.html'
+                window.location.href = 'http://localhost:1234/pages/login.html'
             } else {
                 alert('Hubo un problema al registrar el usuario. Por favor, inténtelo de nuevo.');
+                return;
             }
         } catch (error) {
             console.error('Error al registrar usuario:', error);
