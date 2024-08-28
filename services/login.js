@@ -1,8 +1,7 @@
 import { getUsers } from "../services/getLog.js";
 
 const email = document.getElementById("email");
-const password = document.getElementById("password");
-const loginForm = document.getElementById("loginForm");
+const password = document.getElementById("password")
 const enviar = document.getElementById("enviar")
 
 enviar.addEventListener("click", async function () {
@@ -24,7 +23,7 @@ enviar.addEventListener("click", async function () {
 
         if (user) {
             alert("Login exitoso!");
-            window.location.href = "src\pages\administrador.html"
+            window.location.href = "src/pages/administrador.html"
 
         } else {
             alert("Email o contraseña incorrectos.");

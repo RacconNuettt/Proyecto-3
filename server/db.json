@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": "1b2c",
+      "id": "159b",
       "firstName": "freddy",
       "lastName": "torres",
       "email": "fred@fwd.com",
@@ -9,83 +9,21 @@
       "role": "Estudiante"
     },
     {
-      "id": "d91d",
+      "id": "b47f",
+      "firstName": "Antonio",
+      "lastName": "torres",
+      "email": "pene@fwd.com",
+      "password": "1234",
+      "role": "Administrador"
+    },
+    {
+      "id": "5a89",
       "firstName": "jose",
       "lastName": "gonzwlez",
       "email": "f@gmail.com",
       "password": "1234",
-      "role": "Administrador"
-    },
-    {
-      "id": "3bc5",
-      "firstName": "daniel",
-      "lastName": "monge",
-      "email": "lao@fwd.com",
-      "password": "1234",
       "role": "Estudiante"
-    },
-    {
-      "id": "029f"
-    },
-    {
-      "id": "78fd"
-    },
-    {
-      "id": "8301"
-    },
-    {
-      "id": "b8b0"
-    },
-    {
-      "id": "4454"
-    },
-    {
-      "id": "c74e"
-    },
-    {
-      "id": "9035"
-    },
-    {
-      "id": "0144"
-    },
-    {
-      "id": "6179",
-      "firstName": "Jose",
-      "lastName": "pene",
-      "email": "pene@gmail.com",
-      "password": "pene",
-      "role": "Administrador"
-    },
-    {
-      "id": "c52e"
-    },
-    {
-      "id": "e259"
-    },
-    {
-      "id": "799a"
-    },
-    {
-      "id": "b2d2"
-    },
-    {
-      "id": "cc7b"
     }
   ],
-  "compus": [
-    {
-      "id": "2443",
-      "nombre": "Jose ",
-      "sede": "Sede El Huerto",
-      "fechaSalida": "2024-08-23",
-      "fechaRegreso": "2024-08-30",
-      "codigo": "ksdjfla8"
-    },
-    {
-      "id": "0ba1",
-      "nombre": "freddy",
-      "sede": "Sede El Huerto",
-      "fechaSalida": "2024-08-23",
-    }
-  ]
+  "compus": []
 }
