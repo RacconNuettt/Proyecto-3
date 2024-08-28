@@ -1,22 +1,39 @@
 {
   "users": [
     {
-      "id": "7f88",
+      "id": "2dbb",
       "firstName": "freddy",
       "lastName": "torres",
       "email": "fred@fwd.com",
       "password": "1234",
       "role": "Estudiante"
-    },
-    {
-      "id": "1cdc",
-      "firstName": "jose",
-      "lastName": "gonzwlez",
-      "email": "a@gmail.com",
-      "password": "1234",
-      "role": "Administrador"
     }
   ],
-  "compus": [],
+  "compus": [
+    {
+      "id": "f4d6",
+      "nombre": "freddy",
+      "sede": "Sede El Huerto",
+      "fechaSalida": "2024-08-29",
+      "fechaRegreso": "2024-09-01",
+      "codigo": "8D8C"
+    },
+    {
+      "id": "3fe0",
+      "nombre": "Jose",
+      "sede": "Sede Edunamica Nosara",
+      "fechaSalida": "2024-08-28",
+      "fechaRegreso": "2024-09-07",
+      "codigo": "P3N3"
+    },
+    {
+      "id": "b6d6",
+      "nombre": "bryan",
+      "sede": "Sede Hub Santa Ana",
+      "fechaSalida": "2024-08-29",
+      "fechaRegreso": "2024-08-31",
+      "codigo": "P3N3"
+    }
+  ],
   "solicitud": []
 }
