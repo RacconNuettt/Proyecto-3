@@ -1,47 +1,8 @@
 {
   "users": [
-    {
-      "id": "ff58",
-      "firstName": "Jose Daniel",
-      "lastName": "Gonzalez",
-      "email": "j@gmail.com",
-      "password": "1234",
-      "role": "Estudiante"
-    },
-    {
-      "id": "d7cd",
-      "firstName": "Jose Daniel",
-      "lastName": "Gonzalez",
-      "email": "j@gmail.com",
-      "password": "1234",
-      "role": "Administrador"
-    },
-    {
-      "id": "d399",
-      "firstName": "Jose Daniel",
-      "lastName": "Gonzalez",
-      "email": "j@gmail.com",
-      "password": "1234",
-      "role": "Estudiante"
-    },
-    {
-      "id": "041e",
-      "firstName": "Jose Daniel",
-      "lastName": "Gonzalez",
-      "email": "j@gmail.com",
-      "password": "1234",
-      "role": "Administrador"
-    }
+    
   ],
-  "compus": [
-    {
-      "id": "7586",
-      "nombre": "Jose Daniel",
-      "sede": "Sede El Huerto",
-      "fechaSalida": "2024-08-28",
-      "fechaRegreso": "2024-08-31",
-      "codigo": "JK34"
-    }
+  "compus": []
   ],
   "solicitud": []
 }
