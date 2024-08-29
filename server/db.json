@@ -1,31 +1,9 @@
 {
   "users": [
-    {
-      "id": "0037",
-      "firstName": "Adrian",
-      "lastName": "Zuniga",
-      "email": "z@gmail.com",
-      "password": "1234",
-      "role": "Estudiante"
-    }
+
   ],
   "compus": [
-    {
-      "id": "5b8f",
-      "nombre": "Adrian",
-      "sede": "Sede El Huerto",
-      "fechaSalida": "2024-08-29",
-      "fechaRegreso": "2024-08-31",
-      "codigo": "asddf34"
-    },
-    {
-      "id": "5256",
-      "nombre": "Brayan",
-      "sede": "Sede Hub Santa Ana",
-      "fechaSalida": "2024-08-29",
-      "fechaRegreso": "2024-08-31",
-      "codigo": "dsaf425"
-    }
+ 
   ],
   "solicitud": []
 }
