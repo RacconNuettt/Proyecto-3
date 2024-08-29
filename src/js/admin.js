@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <td>
                     <button class="edit-btn" data-index="${index}">Ver</button>
                     <span id="status-${index}" class="status">
-                        ${solicitud.status === 'accepted' ? '✔️' : solicitud.status === 'rejected' ? '❌' : ''}
+                        ${solicitud.status === 'Aceptar' ? '✔️' : solicitud.status === 'Rechazar' ? '❌' : ''}
                     </span>
                 </td>
             `;
@@ -38,7 +38,7 @@ function handleEdit(event, solicitudes) {
     const index = event.target.dataset.index;
     const solicitud = solicitudes[index];
     
-    if (solicitud.status === 'accepted' || solicitud.status === 'rejected') {
+    if (solicitud.status === 'Aceptar' || solicitud.status === 'Rechazar') {
         alert('Esta solicitud ya ha sido procesada y no puede ser modificada.');
         return;
     }
@@ -56,8 +56,8 @@ function openEditModal(solicitud, index) {
     document.getElementById("editFechaRegreso").value = solicitud.fechaRegreso;
     document.getElementById("editCodigo").value = solicitud.codigo;
 
-    document.getElementById("acceptRequest").onclick = () => handleAccept(index, solicitudes);
-    document.getElementById("rejectRequest").onclick = () => handleReject(index, solicitudes);
+    document.getElementById("acceptRequest").onclick = () => handleAccept(index, solicitud);
+    document.getElementById("rejectRequest").onclick = () => handleReject(index, solicitud);
 }
 
 function closeModal() {
@@ -88,7 +88,7 @@ async function handleReject(index, solicitudes) {
 function updateSolicitudStatus(index, status) {
     const statusSpan = document.getElementById(`status-${index}`);
     if (statusSpan) {
-        statusSpan.innerHTML = status === 'accepted' ? '✔️' : status === 'rejected' ? '❌' : '';
+        statusSpan.innerHTML = status === 'Aceptar' ? '✔️' : status === 'Rechazar' ? '❌' : '';
     }
 }
 

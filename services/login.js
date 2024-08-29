@@ -28,7 +28,7 @@ enviar.addEventListener("click", async function () {
             alert("Login exitoso!");
             
             if(user.role === "Administrador"){
-            window.location.href = "http://localhost:1234/pages/administrador.html"
+                window.location.href = "http://localhost:1234/pages/administrador.html"
             }else{
                 window.location.href = "http://localhost:1234/pages/formulario.html"
             }
