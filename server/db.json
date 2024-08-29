@@ -1,47 +1,7 @@
 {
   "users": [
-    {
-      "id": "fc0d",
-      "firstName": "Jose",
-      "lastName": "Gonzalez",
-      "email": "j@gmail.com",
-      "password": "1234",
-      "role": "Estudiante"
-    },
-    {
-      "id": "216a",
-      "firstName": "Jose",
-      "lastName": "Gonzalez",
-      "email": "j@gmail.com",
-      "password": "1234",
-      "role": "Estudiante"
-    },
-    {
-      "id": "7e0c",
-      "firstName": "Daniel",
-      "lastName": "Gonzalez",
-      "email": "d@gmail.com",
-      "password": "1234",
-      "role": "Estudiante"
-    },
-    {
-      "id": "bd34",
-      "firstName": "Susana",
-      "lastName": "Salas",
-      "email": "s@gmail.com",
-      "password": "1234",
-      "role": "Administrador"
-    }
   ],
   "compus": [
-    {
-      "id": "d171",
-      "nombre": "Jose",
-      "sede": "Sede El Huerto",
-      "fechaSalida": "2024-08-28",
-      "fechaRegreso": "2024-08-30",
-      "codigo": "asfdads3"
-    }
   ],
   "solicitud": []
 }
