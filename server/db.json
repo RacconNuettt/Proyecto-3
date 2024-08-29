@@ -19,20 +19,20 @@
   ],
   "compus": [
     {
-      "id": "5880",
+      "id": "1030",
       "nombre": "freddy",
       "sede": "Sede El Huerto",
-      "fechaSalida": "2024-08-28",
+      "fechaSalida": "2024-08-29",
       "fechaRegreso": "2024-08-31",
       "codigo": "8D8C"
     },
     {
-      "id": "f6b1",
+      "id": "e473",
       "nombre": "Jose",
-      "sede": "Sede Hub Santa Ana",
-      "fechaSalida": "2024-08-28",
+      "sede": "Sede Edunamica Nosara",
+      "fechaSalida": "2024-08-29",
       "fechaRegreso": "2024-08-31",
-      "codigo": "P3N3"
+      "codigo": "8D8C"
     }
   ],
   "solicitud": []

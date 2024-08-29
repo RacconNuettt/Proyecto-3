@@ -10,6 +10,28 @@ const checkbox = document.getElementById("confirmacion")
 const errorMessage = document.getElementById("error-message")
 const vacios = document.getElementById("vacios")
 
+// Obtener el modal y el botón de cerrar
+const modal = document.getElementById("myModal")
+const span = document.getElementsByClassName("close")[0]
+const modalMessage = document.getElementById("modal-message")
+
+// Mostrar el modal con un mensaje específico
+function showModal(message) {
+    modalMessage.textContent = message
+    modal.style.display = "block"
+}
+
+// Ocultar el modal
+span.onclick = function() {
+    modal.style.display = "none"
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none"
+    }
+}
+
 enviar.addEventListener("click", async function (event) {
     event.preventDefault() // Previene el comportamiento predeterminado del formulario si el botón está dentro de uno
 
@@ -35,7 +57,7 @@ enviar.addEventListener("click", async function (event) {
 
     try {
         await postUsers(nombreValue, sedeValue, fechaSalidaValue, fechaRegresoValue, codigoValue)
-        alert("Datos enviados correctamente.")
+        showModal("Datos enviados correctamente.")
         nombre.value = ''
         sede.value = ''
         fechaSalida.value = ''
@@ -44,6 +66,6 @@ enviar.addEventListener("click", async function (event) {
         checkbox.checked = false
     } catch (error) {
         console.error("Error al enviar los datos:", error)
-        alert("Ocurrió un error al enviar los datos.")
+        showModal("Ocurrió un error al enviar los datos.")
     }
 })
