@@ -23,4 +23,3 @@ async function postUsers(firstName,lastName,email,password,role) {
 }
 
 export{postUsers}
-

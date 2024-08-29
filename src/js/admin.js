@@ -1,10 +1,10 @@
-import { getRequest } from "../../services/get.js"; // Para obtener las solicitudes existentes
-import { postSolicitud } from "../../services/postR.js"; // Para enviar el estado a la API solicitud
+import { getRequest } from "../../services/get.js"; 
+import { postSolicitud } from "../../services/postR.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     try {
         const solicitudes = await getRequest();
-        console.log(solicitudes); // Para verificar las solicitudes obtenidas
+        console.log(solicitudes); 
 
         solicitudes.forEach((solicitud, index) => {
             const solicitudRow = document.createElement("tr");

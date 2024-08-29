@@ -1,39 +1,7 @@
 {
   "users": [
-    {
-      "id": "1bf5",
-      "firstName": "freddy",
-      "lastName": "torres",
-      "email": "fred@fwd.com",
-      "password": "1234",
-      "role": "Estudiante"
-    },
-    {
-      "id": "bf06",
-      "firstName": "jose",
-      "lastName": "comenepe",
-      "email": "j@gmail.com",
-      "password": "1234",
-      "role": "Administrador"
-    }
   ],
   "compus": [
-    {
-      "id": "1030",
-      "nombre": "freddy",
-      "sede": "Sede El Huerto",
-      "fechaSalida": "2024-08-29",
-      "fechaRegreso": "2024-08-31",
-      "codigo": "8D8C"
-    },
-    {
-      "id": "e473",
-      "nombre": "Jose",
-      "sede": "Sede Edunamica Nosara",
-      "fechaSalida": "2024-08-29",
-      "fechaRegreso": "2024-08-31",
-      "codigo": "8D8C"
-    }
   ],
   "solicitud": []
 }
