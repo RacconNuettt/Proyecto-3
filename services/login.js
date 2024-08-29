@@ -20,13 +20,10 @@ enviar.addEventListener("click", async function () {
     try {
         
         const users = await getUsers();
-
-        
         const user = users.find(user => user.email === userEmail && user.password === userPassword && user.role === userRole);
 
         if (user) {
-            alert("Login exitoso!");
-
+            alert("Login exitoso!")
         } else {
             alert("Email o contraseña incorrectos.");
         }

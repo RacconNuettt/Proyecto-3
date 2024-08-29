@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } catch (error) {
             console.error('Error al registrar usuario:', error);
             alert('Hubo un problema al registrar el usuario. Por favor, inténtelo de nuevo.');
+            return
         }
     });
 });
