@@ -23,7 +23,15 @@ enviar.addEventListener("click", async function () {
         const user = users.find(user => user.email === userEmail && user.password === userPassword && user.role === userRole);
 
         if (user) {
-            alert("Login exitoso!")
+            alert("Login exitoso!");
+
+
+            if(user.role === "Administrador"){
+                window.location.href = "http://localhost:1234/pages/administrador.html"
+            }else{
+                window.location.href = "http://localhost:1234/pages/formulario.html"
+            }
+
         } else {
             alert("Email o contraseña incorrectos.");
         }

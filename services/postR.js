@@ -1,9 +1,5 @@
 export async function postSolicitud(solicitud) {
     try {
-
-        const userRequest = {
-            solicitud,
-        }
         
         const response = await fetch("http://localhost:3001/solicitud", {
             method: 'POST',
