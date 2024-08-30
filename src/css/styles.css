@@ -181,7 +181,6 @@
         opacity: 0;
     }
 }
-
 .vacios{
     color: red;
     font-size: small;
@@ -208,6 +207,10 @@
     width: 50%; 
     max-width: 500px;
     border-radius: 8px;
+    width: 50%; /* Ajusta el ancho del modal */
+    max-width: 500px; /* Tamaño máximo del modal */
+    border-radius: 8px; /* Bordes redondeados */
+
 }
 
 .close {

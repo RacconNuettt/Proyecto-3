@@ -7,6 +7,7 @@ const loginForm = document.getElementById("loginForm");
 const enviar = document.getElementById("enviar");
 const vacios = document.getElementById("vacios");
 
+
 const modal = document.getElementById("myModal");
 const span = document.getElementsByClassName("close")[0];
 const modalMessage = document.getElementById("modal-message");

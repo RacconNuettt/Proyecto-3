@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     window.location.href = 'http://localhost:1234/login.html';
                 }, 2000);
             } else {
+
                 showModal('Hubo un problema al registrar el usuario. Por favor, inténtelo de nuevo.');
                 setTimeout(() => {
                     hideModal();
