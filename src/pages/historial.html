@@ -5,23 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/historial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Historial</title>
 </head>
 
 <body>
+    <header class="header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../pages/administrador.html">Inicio</a></li>
+                <li><a href="../pages/solicitudes.html" class="cart-icon">Solicitudes</a></li>
+                <li><a href="../pages/historial.html">Historial</a></li>
+            </ul>
+        </nav>
+        <a id="btn" href="#"><button id="btn1"><span>Log Out</span></button></a>
+        <div class="btn">
+            <div class="btn__indicator">
+                <div class="btn__icon-container">
+                    <i class="btn__icon fa-solid"></i>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="container">
         <h1>Historial</h1>
+        <button id="deleteHistoryBtn">Eliminar Historial</button>
+        <div id="updateNotification" style="display:none; color: red; margin-bottom: 10px;">
+            Los datos han sido actualizados. Por favor, recargue la página para ver los cambios.
+        </div>
         <table id="solicitudesTable" class="solicitudes-table">
             <thead>
                 <tr>
-                    <th>Usuario</th>
-                    <th>Sede</th>
+                    <th>ID</th>
                     <th>Fecha de Salida</th>
                     <th>Fecha de Regreso</th>
                     <th>Código</th>
+                    <th>Estado</th>
                 </tr>
             </thead>
+            <tbody>
+            
+            </tbody>
         </table>
     </div>
+    <script type="module" src="../../src/js/historial.js"></script>
+    <script src="../js/animacion.js"></script>
 </body>
 
 </html>

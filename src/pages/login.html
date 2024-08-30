@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../css\styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="../css\styles.css">
 </head>
 <html>
 
 <body>
 	<div class="container">
-		<form id="loginForm" class="form">
+		<div id="loginForm" class="form">
 			<p class="title">Inicie Sesion</p>
 
 			<label>
@@ -28,13 +29,21 @@
 					<option>Administrador</option>
 				</select>
 			</div>
-		
+			<div>
+				<span id="vacios" class="vacios">Completa todos los datos</span>
+			</div>
 			<div class="btnC">
 				<button id="enviar" type="submit" class="submit">Enviar</button>
-				<a href="formulario.html">formulario</a>
 			</div>
-		</form>
+		</div>
 	</div>
+	<div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-message">Datos enviados correctamente.</p>
+        </div>
+    </div>
 </body>
 <script type="module" src="../../services/login.js"></script>
+
 </html>

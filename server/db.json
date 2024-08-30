@@ -1,9 +1,62 @@
 {
   "users": [
-
+    {
+      "id": "133f",
+      "firstName": "Barry",
+      "lastName": "Salas",
+      "email": "s@gmail.com",
+      "password": "1234",
+      "role": "Estudiante"
+    },
+    {
+      "id": "c9b0",
+      "firstName": "Freddy",
+      "lastName": "Torres",
+      "email": "f@gmail.com",
+      "password": "1234",
+      "role": "Estudiante"
+    },
+    {
+      "id": "b918",
+      "firstName": "Jose ",
+      "lastName": "Gonzalez",
+      "email": "j@gmail.com",
+      "password": "1234",
+      "role": "Administrador"
+    }
   ],
   "compus": [
- 
+    {
+      "id": "22ef",
+      "nombre": "Barry Salas",
+      "sede": "Sede El Huerto",
+      "fechaSalida": "2024-08-30",
+      "fechaRegreso": "2024-09-01",
+      "codigo": "d54n4"
+    },
+    {
+      "id": "e68f",
+      "nombre": "Freddy Torres",
+      "sede": "Sede El Huerto",
+      "fechaSalida": "2024-08-30",
+      "fechaRegreso": "2024-09-01",
+      "codigo": "fas44"
+    }
   ],
-  "solicitud": []
+  "solicitud": [
+    {
+      "id": "22ef",
+      "fechaSalida": "2024-08-30",
+      "fechaRegreso": "2024-09-01",
+      "codigo": "d54n4",
+      "status": "accepted"
+    },
+    {
+      "id": "e68f",
+      "fechaSalida": "2024-08-30",
+      "fechaRegreso": "2024-09-01",
+      "codigo": "fas44",
+      "status": "rejected"
+    }
+  ]
 }

@@ -9,13 +9,13 @@
 
 <body>
 	<div class="container">
-		<form class="form">
+		<div class="form">
 			<p class="title">Register </p>
 			<p class="message">Signup now and get full access to our app. </p>
 			<div class="flex">
 				<label>
 					<input id="Firstname" required="" placeholder="" type="text" class="input">
-					<span >Firstname</span>
+					<span>Firstname</span>
 				</label>
 				<label>
 					<input id="Lastname" required="" placeholder="" type="text" class="input">
@@ -38,16 +38,22 @@
 					<option>Administrador</option>
 				</select>
 			</div>
-			
-
+			<div>
+				<span id="vacios" class="vacios">Completa todos los datos</span>
+			</div>
 			<div class="btnC">
 				<button id="enviar" class="submit">Submit</button>
 			</div>
 
 			<p class="signin">Already have an acount ? <a href="pages\login.html">Signin</a> </p>
-		</form>
+		</div>
 	</div>
-
+	<div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-message">Datos enviados correctamente.</p>
+        </div>
+    </div>
 
 	<script type="module" src="index.js"></script>
 	</script>
