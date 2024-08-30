@@ -1,9 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
     padding: 0;
+}
+
+:root {
+    --color: #9176FF;
+    --dark-color: #2b2b2b;
+    --dark-icon-color: #fff;
+    --light-color: #f7f7f7;
+    --light-icon-color: #FFDE59;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #1c2023;
+    width: 1em;
+    height: 2em;
+    border-radius: 2em;
+    padding: 1rem;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, .1),
+        inset 0 8px 8px rgba(0, 0, 0, .1),
+        inset 0 -4px 4px rgba(0, 0, 0, .1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn__indicator {
+    background-color: #1c2023;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
+    transition: transform .3s ease;
+}
+
+.btn__icon-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__icon {
+    color: var(--light-icon-color);
+    font-size: 3rem;
+}
+
+.btn__icon.animated {
+    animation: spin 0.5s;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body.darkmode {
+    background-color: var(--dark-color);
+}
+
+.darkmode .btn {
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, .3),
+        inset 8px 0 8px rgba(0, 0, 0, .3),
+        inset 0 -4px 4px rgba(0, 0, 0, .3);
+}
+
+.darkmode .btn__indicator {
+    transform: translateX(7em);
+    background-color: var(--dark-color);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, .3);
+}
+
+.darkmode .btn__icon {
+    color: var(--dark-icon-color);
+}
+
+.header {
+    background-color: #1c2023;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15%;
+}
+
+.header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header .nav-links li {
+    position: relative;
+}
+
+.header .nav-links li::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #43a50a;
+    transition: width 0.3s;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.header .nav-links li:hover::after {
+    width: 100%;
+}
+
+.header .nav-links a {
+    color: #eceff1;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#btn1 {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #66ff66;
+    color: ghostwhite;
+}
+
+#btn1 span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+#btn1:hover span {
+    color: rgb(255, 255, 255);
+}
+
+#btn1::before,
+#btn1::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#btn1::before {
+    content: "";
+    background: #000000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+#btn1:hover::before {
+    transform: translate3d(100%, 0, 0);
 }
 
 .container {

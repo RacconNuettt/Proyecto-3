@@ -6,9 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solicitudes</title>
     <link rel="stylesheet" href="../css/solicitud.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <header class="header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../pages/administrador.html">Inicio</a></li>
+                <li><a href="../pages/solicitudes.html" class="cart-icon">Solicitudes</a></li>
+                <li><a href="../pages/historial.html">Historial</a></li>
+            </ul>
+        </nav>
+        <a id="btn" href="#"><button id="btn1"><span>Log Out</span></button></a>
+        <div class="btn">
+            <div class="btn__indicator">
+                <div class="btn__icon-container">
+                    <i class="btn__icon fa-solid"></i>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="container">
         <h1>Solicitudes</h1>
         <table id="solicitudesTable" class="solicitudes-table">
@@ -20,16 +40,16 @@
                     <th>Fecha de Regreso</th>
                     <th>Código</th>
                     <th>Acciones</th>
+                    <th>Estado</th>
                 </tr>
             </thead>
             <tbody id="solicitudesCtn"></tbody>
         </table>
     </div>
-
     <div id="editModal" class="modal">
         <div class="modal-content">
             <span id="closeModal" class="close">&times;</span>
-            <h2>Ver Solicitud</h2>
+            <h2>Informacion de la Solicitud</h2>
             <label>
                 <input id="editNombre" required placeholder="Nombre de usuario" type="text" class="input" readonly>
                 <span>Nombre de Usuario</span>
@@ -50,13 +70,10 @@
                 <input id="editCodigo" required placeholder="Código de la Computadora" type="text" class="input" readonly>
                 <span>Código de la Computadora</span>
             </label>
-            <div class="btnC">
-                <button id="acceptRequest" class="submit">Aceptar</button>
-                <button id="rejectRequest" class="submit reject">Rechazar</button>
-            </div>
         </div>
     </div>
-
+    
+    <script src="../js/animacion.js"></script>
     <script type="module" src="../../src/js/admin.js"></script>
 </body>
 

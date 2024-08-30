@@ -51,14 +51,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = await postUsers(firstNameValue, lastNameValue, emailValue, passwordValue, roleValue);
 
             if (data.id) {
-                
                 showModal('Usuario registrado con éxito');
                 setTimeout(() => {
                     hideModal();
                     window.location.href = 'http://localhost:1234/login.html';
                 }, 2000);
             } else {
-                
+
                 showModal('Hubo un problema al registrar el usuario. Por favor, inténtelo de nuevo.');
                 setTimeout(() => {
                     hideModal();

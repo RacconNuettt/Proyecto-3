@@ -7,18 +7,16 @@ const loginForm = document.getElementById("loginForm");
 const enviar = document.getElementById("enviar");
 const vacios = document.getElementById("vacios");
 
-// Modal
+
 const modal = document.getElementById("myModal");
 const span = document.getElementsByClassName("close")[0];
 const modalMessage = document.getElementById("modal-message");
 
-// Mostrar el modal con un mensaje específico
 function showModal(message) {
     modalMessage.textContent = message;
     modal.style.display = "block";
 }
 
-// Ocultar el modal
 function hideModal() {
     modal.style.display = "none";
 }
@@ -54,9 +52,9 @@ enviar.addEventListener("click", async function () {
             setTimeout(() => {
                 hideModal();
                 if (user.role === "Administrador") {
-                    window.location.href = "http://localhost:1234/pages/administrador.html";
+                    window.location.href = "http://localhost:1234/administrador.html";
                 } else {
-                    window.location.href = "http://localhost:1234/pages/formulario.html";
+                    window.location.href = "http://localhost:1234/formulario.html";
                 }
             }, 2000); 
 
