@@ -1,5 +1,47 @@
 {
-  "users": [],
-  "compus": [],
+  "users": [
+    {
+      "id": "17cb",
+      "firstName": "freddy",
+      "lastName": "torres",
+      "email": "f@gmail.com",
+      "password": "1234",
+      "role": "Estudiante"
+    },
+    {
+      "id": "b711",
+      "firstName": "jose",
+      "lastName": "perez",
+      "email": "p@gmail.com",
+      "password": "1234",
+      "role": "Estudiante"
+    },
+    {
+      "id": "7b3d",
+      "firstName": "antonio",
+      "lastName": "monge",
+      "email": "m@gmail.com",
+      "password": "1234",
+      "role": "Administrador"
+    },
+    {
+      "id": "882e",
+      "firstName": "ashley",
+      "lastName": "porras",
+      "email": "ashlyporras1199@gmail.com",
+      "password": "meli11",
+      "role": "Estudiante"
+    }
+  ],
+  "compus": [
+    {
+      "id": "8299",
+      "nombre": "ashley",
+      "sede": "Sede El Huerto",
+      "fechaSalida": "2024-08-29",
+      "fechaRegreso": "2024-09-01",
+      "codigo": "R2D2"
+    }
+  ],
   "solicitud": []
 }
